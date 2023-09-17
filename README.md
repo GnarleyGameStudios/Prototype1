@@ -1,4 +1,4 @@
-Hugo Cortez
+Gnarley Game Studios @2023 ggs
 No Name Top Down RPG 0.0.1
 
 
