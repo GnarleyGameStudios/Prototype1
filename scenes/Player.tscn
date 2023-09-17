@@ -1,14 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://ju2xqmqh35og"]
+[gd_scene load_steps=4 format=3 uid="uid://ju2xqmqh35og"]
 
-[ext_resource type="Texture2D" uid="uid://rgkl4kta7bj" path="res://assets/test player.png" id="1"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_p5w3y"]
+[ext_resource type="Texture2D" uid="uid://btlgspdaiqo20" path="res://assets/Actor/Characters/WhiteFighter/SpriteSheet.png" id="2_2eidt"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(16, 16)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+texture_filter = 1
+script = ExtResource("1_p5w3y")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1")
+texture = ExtResource("2_2eidt")
+hframes = 4
+vframes = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("1")
