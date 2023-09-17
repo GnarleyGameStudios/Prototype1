@@ -4,6 +4,7 @@ extends CharacterBody2D
 # Declare member variables here. Examples:
 var velocity : Vector2 = Vector2()
 var direction : Vector2 = Vector2()
+var speed = 200
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -27,6 +28,7 @@ func read_input():
 		direction = Vector2(1,0)
 
 	velocity = velocity.normalized()
+	#velocity = move_and_slide(velocity * speed)
 	
 func _physics_process(delta):
 	read_input()
