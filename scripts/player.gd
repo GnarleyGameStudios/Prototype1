@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export 
-var speed: int = 55
+var speed: int = 105
 
 @onready
 var animations = $AnimationPlayer
